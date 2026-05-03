@@ -10,8 +10,8 @@ import HeroLogo from '@/components/sections/hero/HeroLogo';
 import MetricCardTwo from '@/components/sections/metrics/MetricCardTwo';
 import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
 import ProductCardThree from '@/components/sections/product/ProductCardThree';
-import TestimonialCardOne from '@/components/sections/testimonial/TestimonialCardOne';
-import { Award, Smile, Users, Utensils, Wine, CheckCircle } from "lucide-react";
+import TestimonialCardSix from '@/components/sections/testimonial/TestimonialCardSix';
+import { Award, Smile, Users, Utensils, Wine, CheckCircle, MessageSquare } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -98,17 +98,16 @@ export default function LandingPage() {
   </div>
 
   <div id="testimonials" data-section="testimonials">
-      <TestimonialCardOne
+      <TestimonialCardSix
       animationType="slide-up"
       textboxLayout="default"
-      gridVariant="uniform-all-items-equal"
       useInvertedBackground={false}
-      testimonials={[
-        { id: "1", name: "Elena P.", role: "Traveler", company: "France", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/man-presents-girl-ring_1398-4220.jpg" },
-        { id: "2", name: "Mark S.", role: "Foodie", company: "UK", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/people-having-dinner-luxurious-restaurants_23-2151081870.jpg" },
-      ]}
       title="Guest Experiences"
-      description="Stories from our valued guests."
+      description="Hear from those who have savored our traditions."
+      testimonials={[
+        { id: "1", name: "Elena P.", handle: "@elena_p", testimonial: "The best Khachapuri I have ever tasted!", icon: MessageSquare },
+        { id: "2", name: "Mark S.", handle: "@marks_travels", testimonial: "A truly authentic Georgian atmosphere in Samarkand.", icon: MessageSquare },
+      ]}
     />
   </div>
 
